@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginPageActivity"
+    tools:ignore="MissingClass">
+
+
+    <TextView
+        android:id="@+id/text_enter_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:text="Enter your mobile number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+    <RelativeLayout
+        android:id="@+id/first_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_enter_number"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="IND" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ccp"
+            android:background="@drawable/button_shape"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            tools:ignore="TextFields" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/sendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/first_relative"
+        android:layout_margin="20dp"
+        android:hint="Continue"
+        android:textSize="17sp"
+        android:background="@drawable/button_normall_shape"
+        android:textColorHint="@color/white"
+
+       />
+
+
+
+    <RelativeLayout
+        android:id="@+id/view_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendOtp"
+        >
+        <View
+            android:id="@+id/view1"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/black"
+            android:layout_marginTop="13dp"
+            />
+        <TextView
+            android:id="@+id/or"
+            android:layout_toRightOf="@+id/view1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+           android:textAlignment="center"
+            android:text="@string/or"
+            android:textSize="17sp"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/or"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:layout_below="@id/view_relative"
+        android:background="@drawable/button_normall_shape"
+        android:text="Continue with google"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/common_google_signin_btn_icon_dark"
+        android:textSize="17sp"/>
+<!--    <Button-->
+<!--        android:id="@+id/sign_in_button_facebook"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_below="@id/sign_in_button"-->
+<!--        android:background="@drawable/button_normall_shape"-->
+<!--        android:text="Continue with facebook"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:drawableLeft="@drawable/baseline_face_24"-->
+<!--        android:textSize="17sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sign_in_button_email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_below="@id/sign_in_button_facebook"-->
+<!--        android:background="@drawable/button_normall_shape"-->
+<!--        android:text="Continue with email"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:drawableLeft="@drawable/baseline_email_24"-->
+<!--        android:textSize="17sp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/view_down_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_button"
+        android:layout_marginTop="20dp"
+        >
+        <View
+            android:id="@+id/view3"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/black"
+            android:layout_marginTop="13dp"
+            />
+        <TextView
+            android:id="@+id/or_down"
+            android:layout_toRightOf="@+id/view3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/or"
+            android:textSize="17sp"
+            />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/or_down"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account"
+        android:layout_below="@+id/view_down_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find my account"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_in_desc"
+        android:layout_below="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12dp"
+        android:layout_marginRight="20dp"
+        android:text="By proceeding,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        />
+
+    <TextView
+        android:id="@+id/sign_in_privacy"
+        android:layout_below="@+id/sign_in_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12dp"
+        android:layout_marginRight="20dp"
+        android:text="This site is protected by reCAPTCHA and the Google Privacy.Policy.and Terms of Service apply."
+        />
+
+</RelativeLayout>

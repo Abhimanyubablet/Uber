@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+  <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+     >
+      <RelativeLayout
+          android:id="@+id/ride_head"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          >
+          <ImageView
+              android:id="@+id/car"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/car"
+              />
+          <TextView
+              android:id="@+id/rides"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/car"
+              android:text="Rides"
+              android:layout_marginLeft="10sp"
+              android:layout_marginTop="15sp"
+              android:textColor="@color/black"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/delivery_head"
+          android:layout_toRightOf="@+id/ride_head"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+          <ImageView
+              android:id="@+id/food"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/food"
+              />
+          <TextView
+              android:id="@+id/delivery_text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/food"
+              android:text="Delivery"
+              android:layout_marginLeft="10sp"
+              android:layout_marginTop="15sp"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              />
+      </RelativeLayout>
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pickout_card"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:padding="10dp"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/search_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="50dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/enter_pickup"
+                android:background="@color/light_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/search_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_search_24" />
+
+                <TextView
+                    android:id="@+id/pickup_text"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/search_img"
+                    android:textColor="@color/black"
+                    android:text="Enter pickup point" />
+
+                 <Button
+                     android:id="@+id/now"
+                     android:layout_toRightOf="@+id/pickup_text"
+                     android:layout_width="match_parent"
+                     android:layout_marginRight="10dp"
+                     android:drawableLeft="@drawable/time"
+                     android:layout_height="wrap_content"
+                     android:text="Now"
+                     />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

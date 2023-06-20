@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "710063560845",
+    "project_id": "uber-project-482ec",
+    "storage_bucket": "uber-project-482ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710063560845:android:8d2d9f98bcbd3cc8a7eac4",
+        "android_client_info": {
+          "package_name": "com.example.uber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710063560845-p9bop8fgp6tc2rgf57l6igpvbq3hbrt7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uber",
+            "certificate_hash": "da76c529766aaa136a4a3cbf56664f49eb440d22"
+          }
+        },
+        {
+          "client_id": "710063560845-g6pgfl5303pa8mafs9p01hr8fpnfen59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-GYrpuTM-JYg58AsbQoUOOGFMqbX8NQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710063560845-3pne43u0fv703sl2h9iviuq3v96e6omt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
